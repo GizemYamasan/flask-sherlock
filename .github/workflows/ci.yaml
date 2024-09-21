@@ -37,7 +37,9 @@ jobs:
     needs:
       - unit_test
     env:
-        IMAGE_ARTIFACT: ${{ secrets.DOCKER_HUB_USERNAME }}/sherlock:latest
+        DOCKER_HUB_USERNAME: gizem.yamasan@gmail.com
+        IMAGE_ARTIFACT: gizem.yamasan@gmail.com/sherlock:latest
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
     environment: production
     steps:
      - uses: actions/checkout@v4
