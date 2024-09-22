@@ -38,7 +38,7 @@ jobs:
       - unit_test
     env:
         DOCKER_HUB_USERNAME: gizem.yamasan@gmail.com
-        IMAGE_ARTIFACT: gizem.yamasan@gmail.com/sherlock:latest
+        IMAGE_ARTIFACT: gizem.yamasan@gmail.com/sherlock
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
     environment: production
     steps:
